@@ -2,12 +2,15 @@ package recfun
 
 object Main {
   def main(args: Array[String]) {
-    println("Pascal's Triangle")
+
+    /*println("Pascal's Triangle")
     for (row <- 0 to 10) {
       for (col <- 0 to row)
         print(pascal(col, row) + " ")
       println()
-    }
+    }*/
+
+    countChange(4, List(1,2))
   }
 
   /**
@@ -32,18 +35,49 @@ object Main {
    * Exercise 3
    */
     def countChange(money: Int, coins: List[Int]): Int = {
-      def hasOneAtLeast(money:Int ,coins:List[Int]):Boolean = coins.map( x => money%x == 0 ).reduce( (a,b) => a | b )
+
+
+
+      def hasOneAtLeast(money:Int ,coins:List[Int]):Boolean = if (!coins.isEmpty) coins.map( x => money%x == 0 ).reduce( (a,b) => a | b )
+      else false
 
       def clean(money:Int,coins:List[Int]):List[Int] = coins.filter(x=>x<=money)
 
-      def generateWays(money:Int,coin:Int):List[Int] = {println(money);println(coin);println(money/coin); 0 to (money/coin) toList}
+      def generateWays(money:Int,coin:Int):List[Int] =  0 to (money/coin) toList
 
-      //def calculate(money:Int,coins:List[Int]):Int => generateWays(money,coins.head)
+      def proxy(moneyL: Int, coinsL: List[Int]): Int = {
+        val limpias = clean(moneyL,coinsL).sorted.reverse
+        if (coinsL.isEmpty) return 0
+        if (money==0) return 0
+        if (limpias.isEmpty) return 0
 
-      println( generateWays(money,clean(money,coins).sorted.reverse.head)  )
-      //println(generateWays(300,200))
-      //print(clean(money,coins).sorted.reverse)
+        if(limpias.length==1)
+          if (money%limpias.head==0) 1 else 0
+        else{
+          println("------------")
+          println(moneyL)
+          println(limpias)
+          println(limpias.length)
+          println("------------")
+          generateWays(moneyL, limpias.head).map(x => {
+            printf("%s %s %s ",x,limpias.head, moneyL - (x * limpias.head) )
+            println()
+            proxy(moneyL - (x * limpias.head), limpias.tail)
+          }).sum
+        }
+      }
+
+        val a = proxy(money,coins)
+        printf("--->%s",a)
+        println()
+
+
+
+
+      if (coins.isEmpty) 0
+      else
       if (!hasOneAtLeast(money,clean(money,coins))) 0
       else -1
     }
   }
+
