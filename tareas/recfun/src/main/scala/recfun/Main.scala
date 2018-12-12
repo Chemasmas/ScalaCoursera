@@ -36,48 +36,22 @@ object Main {
    */
     def countChange(money: Int, coins: List[Int]): Int = {
 
-
-
       def hasOneAtLeast(money:Int ,coins:List[Int]):Boolean = if (!coins.isEmpty) coins.map( x => money%x == 0 ).reduce( (a,b) => a | b )
       else false
 
-      def clean(money:Int,coins:List[Int]):List[Int] = coins.filter(x=>x<=money)
+      def clean(money:Int,coins:List[Int]):List[Int] = coins.filter(x=>x<=money).sorted.reverse
 
       def generateWays(money:Int,coin:Int):List[Int] =  0 to (money/coin) toList
 
-      def proxy(moneyL: Int, coinsL: List[Int]): Int = {
-        val limpias = clean(moneyL,coinsL).sorted.reverse
-        if (coinsL.isEmpty) return 0
-        if (money==0) return 0
-        if (limpias.isEmpty) return 0
-
-        if(limpias.length==1)
-          if (money%limpias.head==0) 1 else 0
-        else{
-          println("------------")
-          println(moneyL)
-          println(limpias)
-          println(limpias.length)
-          println("------------")
-          generateWays(moneyL, limpias.head).map(x => {
-            printf("%s %s %s ",x,limpias.head, moneyL - (x * limpias.head) )
-            println()
-            proxy(moneyL - (x * limpias.head), limpias.tail)
-          }).sum
-        }
+      def proxy(moneyL: Int, coins: List[Int]): Int = {
+        val coinsL = clean(moneyL,coins)
+        if(coinsL.isEmpty && moneyL>0) return 0
+        if(moneyL==0) return 1
+        else generateWays(moneyL,coinsL.head).map( x => proxy( moneyL - x * coinsL.head, coinsL.tail ) ).sum
       }
 
-        val a = proxy(money,coins)
-        printf("--->%s",a)
-        println()
 
-
-
-
-      if (coins.isEmpty) 0
-      else
-      if (!hasOneAtLeast(money,clean(money,coins))) 0
-      else -1
+      proxy(money,coins)
     }
   }
 

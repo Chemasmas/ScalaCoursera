@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c88c8dcb-2199-4ee9-9536-20038462922b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/progfun1-recfun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/progfun1-recfun.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/root-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/root-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/recfun-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/recfun-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/recfun-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/recfun-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
@@ -42,11 +40,10 @@
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterDir="false" />
     </list>
@@ -88,12 +85,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Scala Console" value="45" />
-          <entry key="scala" value="2024" />
+          <entry key="scala" value="2274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="2069" />
+          <entry key="Scala" value="2319" />
         </counts>
       </usages-collector>
     </session>
@@ -116,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="143">
+              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -125,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/recfun/CountChangeSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="34">
               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
@@ -134,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/recfun/BalanceSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="68">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
@@ -159,18 +156,59 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1272" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1376" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scala" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="scala" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="recfun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="progfun1-recfun" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="progfun1-recfun" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,63 +216,17 @@
               <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
               <item name="recfun" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="progfun1-recfun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="recfun" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544543703304" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544566004152" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -252,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CountChangeSuite">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="recfun.Main" />
       <module name="progfun1-recfun" />
@@ -347,8 +339,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CountChangeSuite" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BalanceSuite" />
         <item itemvalue="JUnit.PascalSuite" />
         <item itemvalue="Scala Console.Scala Console" />
@@ -420,15 +412,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountChangeSuite - 2018.12.10 at 19h 32m 07s.xml">
-      <configuration name="CountChangeSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountChangeSuite - 2018.12.10 at 19h 49m 58s.xml">
-      <configuration name="CountChangeSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountChangeSuite - 2018.12.10 at 19h 51m 20s.xml">
-      <configuration name="CountChangeSuite" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CountChangeSuite - 2018.12.10 at 19h 52m 13s.xml">
       <configuration name="CountChangeSuite" configurationId="JUnit" />
     </history-entry>
@@ -450,9 +433,18 @@
     <history-entry file="CountChangeSuite - 2018.12.10 at 20h 08m 27s.xml">
       <configuration name="CountChangeSuite" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CountChangeSuite - 2018.12.11 at 15h 55m 25s.xml">
+      <configuration name="CountChangeSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountChangeSuite - 2018.12.11 at 16h 06m 17s.xml">
+      <configuration name="CountChangeSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountChangeSuite - 2018.12.11 at 16h 06m 35s.xml">
+      <configuration name="CountChangeSuite" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19054000" />
+    <option name="totallyTimeSpent" value="21977000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,10 +456,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24544074" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -477,7 +469,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3852459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,21 +503,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="143">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/recfun/CountChangeSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="34">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/recfun/BalanceSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="68">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
