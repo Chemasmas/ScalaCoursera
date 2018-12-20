@@ -109,6 +109,38 @@ class FunSetSuite extends FunSuite {
       assert(!contains(s, 3), "Union 3")
     }
   }
+/*
+  test("custom test 1") {
+    new TestSets {
+      val p = union(singletonSet(1), singletonSet(3))
+      val p2 = union(singletonSet(4), singletonSet(5))
+      val p3 = union(singletonSet(7), singletonSet(1000))
+
+      val p4 = union(p,p2)
+      val p5 = union(p3,p4)
+
+      val q = union(singletonSet(0), singletonSet(2))
+      val q2 = union(singletonSet(3), singletonSet(4))
+      val q3 = union(singletonSet(6), singletonSet(999))
+
+      val q4 = union(q,q2)
+      val q5 = union(q3,q4)
+
+      def f(x:Int):Int= x-1
 
 
+
+    }
+  }
+*/
+
+  test("custom test 1") {
+    new TestSets {
+      val p:Set = x => x==1 | x==2 | x==3 | x==4
+
+      def f(x: Int): Boolean = x < 5
+
+      assert(forall(p, f))
+    }
+  }
 }
