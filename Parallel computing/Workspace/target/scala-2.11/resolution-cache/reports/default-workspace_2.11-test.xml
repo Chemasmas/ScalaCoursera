@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="workspace_2.11"
+		revision="0.1.0-SNAPSHOT"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20181225165633"/>
+	<dependencies>
+		<module organisation="junit" name="junit">
+			<revision name="4.10" status="release" pubdate="20110929141223" resolver="public" artresolver="public" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2345" time="296" location="C:\Users\eva_0\.ivy2\cache\junit\junit\ivy-4.10.xml" searched="true" original-local-location="C:\Users\eva_0\.ivy2\cache\junit\junit\ivy-4.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom"/>
+				<caller organisation="default" name="workspace_2.11" conf="test, compile, runtime" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="253160" time="9227" location="C:\Users\eva_0\.ivy2\cache\junit\junit\jars\junit-4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.1" status="release" pubdate="20070718141143" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="481" time="251" location="C:\Users\eva_0\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.1.xml" searched="true" original-local-location="C:\Users\eva_0\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
+				<caller organisation="junit" name="junit" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.10"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="successful" details="" size="76643" time="3319" location="C:\Users\eva_0\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.12" status="release" pubdate="20171102193730" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1428" time="278" location="C:\Users\eva_0\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.12.xml" searched="true" original-local-location="C:\Users\eva_0\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.pom"/>
+				<caller organisation="default" name="workspace_2.11" conf="test, compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="5749423" time="47805" location="C:\Users\eva_0\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
