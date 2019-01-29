@@ -11,7 +11,11 @@ def asSet(tweets: TweetSet): Set[Tweet] = {
 def size(set: TweetSet): Int = asSet(set).size
 
 
-val set1 = new Empty
+val a: Array[NonEmpty] = Array(new NonEmpty(1, Empty, Empty))
+val b: Array[IntSet] = a
+b(0) = Empty
+val s: NonEmpty = a(0)
+//val set1 = new Empty
 /*
 val set2 = set1.incl(new Tweet("b", "a body", 20))
 val set3 = set2.incl(new Tweet("a", "b body", 20))
