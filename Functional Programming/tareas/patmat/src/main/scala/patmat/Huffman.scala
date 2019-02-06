@@ -24,9 +24,15 @@ object Huffman {
   
 
   // Part 1: Basics
-    def weight(tree: CodeTree): Int = ??? // tree match ...
+    def weight(tree: CodeTree): Int = tree match {
+      case Leaf(_,w) => w
+      case Fork(_,_,_,w2) => w2
+    } // tree match ...
   
-    def chars(tree: CodeTree): List[Char] = ??? // tree match ...
+    def chars(tree: CodeTree): List[Char] = tree match{
+      case Leaf(c,_) => List(c)
+      case Fork(_,_,cs,_) => cs
+    } // tree match ...
   
   def makeCodeTree(left: CodeTree, right: CodeTree) =
     Fork(left, right, chars(left) ::: chars(right), weight(left) + weight(right))
@@ -69,7 +75,9 @@ object Huffman {
    *       println("integer is  : "+ theInt)
    *   }
    */
-    def times(chars: List[Char]): List[(Char, Int)] = ???
+    def times(chars: List[Char]): List[(Char, Int)] = {
+      ( for( x <- chars.toSet[Char] ) yield ( x,chars.count(y => y == x) ) ).toList
+    }
   
   /**
    * Returns a list of `Leaf` nodes for a given frequency table `freqs`.
@@ -78,12 +86,16 @@ object Huffman {
    * head of the list should have the smallest weight), where the weight
    * of a leaf is the frequency of the character.
    */
-    def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
+    def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = freqs.sortBy( i => i._2 ).map ( x => Leaf(x._1,x._2) )
   
   /**
    * Checks whether the list `trees` contains only one single code tree.
    */
-    def singleton(trees: List[CodeTree]): Boolean = ???
+    def singleton(trees: List[CodeTree]): Boolean = trees match {
+      case List() => false
+      case List(Leaf(_,_)) => true
+      case _ => false
+    }
   
   /**
    * The parameter `trees` of this function is a list of code trees ordered
@@ -97,8 +109,19 @@ object Huffman {
    * If `trees` is a list of less than two elements, that list should be returned
    * unchanged.
    */
-    def combine(trees: List[CodeTree]): List[CodeTree] = ???
-  
+    def combine(trees: List[CodeTree]): List[CodeTree] ={
+      println(trees)
+      trees match {
+        case List() => trees
+        case List(Leaf(_, _)) => trees
+        case List(Fork(_, _, _, _)) => trees
+        case _ :: _ :: Nil => trees
+        //case Leaf(c1, w1) :: Leaf(c2, w2) :: Nil => List(Fork(Leaf(c1, w1), Leaf(c2, w2), List(c1, c2), w1 + w2))
+        //case Leaf(c1, w1) :: Fork(l1, r1, cs, ws) :: Nil => List(Fork(Leaf(c1, w1), Fork(l1, r1, cs, ws), c1 :: cs, ws + w1))
+        case Fork(l1, r1, cs1, ws1) :: Fork(l2, r2, cs2, ws2) :: Nil => List(Fork(Fork(l1, r1, cs1, ws1), Fork(l2, r2, cs2, ws2), cs1 ::: cs2 , ws1 + ws2))
+        case Fork(l1, r1, cs1, ws1) :: Fork(l2, r2, cs2, ws2) :: xs => Fork(Fork(l1, r1, cs1, ws1), Fork(l2, r2, cs2, ws2), cs1 ::: cs2, ws1 + ws2) :: combine(xs)
+      }
+    }
   /**
    * This function will be called in the following way:
    *
