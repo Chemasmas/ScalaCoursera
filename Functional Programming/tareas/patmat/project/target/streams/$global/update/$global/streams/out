@@ -11518,7 +11518,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.7!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 9156ms :: artifacts dl 1160ms
+[debug] :: resolution report :: resolve 13488ms :: artifacts dl 351ms
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT compile produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-compile.xml
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT runtime produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-runtime.xml
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT test produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-test.xml
@@ -11532,5 +11532,5 @@
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT docs produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-docs.xml
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT pom produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-pom.xml
 [debug] 	report for default#patmat-build;0.1-SNAPSHOT scala-tool produced in C:\Users\eva_0\Desktop\taller\ScalaCoursera\Functional Programming\tareas\patmat\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-patmat-build-scala-tool.xml
-[debug] 	resolve done (9156ms resolve - 1160ms download)
+[debug] 	resolve done (13488ms resolve - 351ms download)
 [info] Done updating.
