@@ -81,7 +81,49 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-   def combinations(occurrences: Occurrences): List[Occurrences] = ???
+   //def combinations(occurrences: Occurrences): List[Occurrences] = ???
+  def combinations(occurrences: Occurrences): List[Occurrences] = {
+
+
+    def mapPos(occurrence:(Char,Int)): Occurrences = {
+      occurrence match {
+        case (c,x) => (0 to x).map( (c,_) ).toList
+      }
+    }
+
+    def aux(tup:(List[Occurrences], Occurrences)): List[Occurrences] = {
+      tup match {
+        case (lista,Nil) => lista
+        case (Nil,x) => {
+          val a = for(
+            x <- mapPos(x.head)
+          ) yield {
+            x :: Nil
+          }
+          aux( (a.toList,x.tail) )
+        }
+        case (lista, x ) => {
+          val a = for(
+            y <- lista;
+            x <- mapPos(x.head)
+          ) yield {
+            x :: y
+          }
+          aux( (a.toList,x.tail) )
+        }
+      }
+    }
+
+
+    def eraseZeros(orig:List[Occurrences]):List[Occurrences] = {
+      orig.map( x => x.filter( y => y._2!=0 ).reverse ).toList
+    }
+     occurrences match {
+       case Nil => List(Nil)
+       case _ => eraseZeros( aux(Nil,occurrences) ).toList
+     }
+
+  }
 
   /** Subtracts occurrence list `y` from occurrence list `x`.
    *
@@ -93,7 +135,35 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = ???
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = {
+    val a = y.map(x1 => {
+      (x1, x.map( _._1 ).indexOf( x1._1 ) )
+    }).toList
+    def aux(occ: Occurrences, elim: List[((Char, Int), Int)]): Occurrences = {
+      occ match {
+        case Nil => occ
+        case lista => {
+          elim match {
+            case Nil => occ
+            case (xu, pos) :: xs => {
+              //debo actualizar la posicion
+              val pos2 = occ.map( _._1 ).indexOf( xu._1 )
+
+              val (oc, ov) = lista(pos2)
+              val (_, sv) = xu
+              if (ov - sv == 0) {
+                aux(lista.filter(z => z._1 != oc), xs)
+              } else {
+                aux(lista.updated(pos2, (oc, ov - sv)), xs)
+              }
+            }
+          }
+        }
+      }
+    }
+
+    aux(x, a)
+  }
 
   /** Returns a list of all anagram sentences of the given sentence.
    *
@@ -122,7 +192,7 @@ object Anagrams {
    *      List(my, en, as),
    *      List(my, as, en),
    *      List(my, sane),
-   *      List(my, Sean),
+   *      List(my, Sean),combinations
    *      List(say, men),
    *      List(yes, man)
    *    )
